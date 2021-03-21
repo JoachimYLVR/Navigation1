@@ -8,7 +8,7 @@
 .container {
   max-with: 1500px;
   width: 90%;
-  background-color: var(--darkGrey);
+  background-color: var(--grey);
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -35,6 +35,24 @@ nav ul li a {
   background-color: var(--grey);
 }
 
-nav ul li:last-of-type a {
+nav ul li:nth-child(6) {
+  margin-right: auto;
+}
+
+nav ul li:first-child a {
+  color: var(--blue);
+  background-color: var(--greyActive);
+}
+
+nav ul li:nth-child(7) a,
+nav ul li:nth-child(8) a,
+nav ul li:nth-child(9) a,
+nav ul li:nth-child(10) a {
   border-right: 0px;
+  color: var(--blue);
+  font-size: 16px;
+}
+
+nav ul li:hover a {
+  background-color: var(--greyActive);
 }
