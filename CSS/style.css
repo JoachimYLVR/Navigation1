@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 :root {
   --darkGrey: #232325;
   --grey: #363636;
@@ -6,14 +8,11 @@
 }
 
 .container {
-  max-with: 1500px;
+  max-width: 1500px;
   width: 90%;
   background-color: var(--grey);
   margin: 0 auto;
   margin-top: 50px;
-}
-
-nav {
 }
 
 nav ul {
@@ -33,6 +32,9 @@ nav ul li a {
   line-height: 36px;
   border-right: var(--darkGrey) solid 1px;
   background-color: var(--grey);
+  font-family: "Bebas Neue", cursive;
+  font-size: 14px;
+  transition: all 300ms;
 }
 
 nav ul li:nth-child(6) {
@@ -41,6 +43,14 @@ nav ul li:nth-child(6) {
 
 nav ul li:first-child a {
   color: var(--blue);
+}
+
+nav ul li:first-child a:hover,
+nav ul li:nth-child(7) a:hover,
+nav ul li:nth-child(8) a:hover,
+nav ul li:nth-child(9) a:hover,
+nav ul li:nth-child(10) a:hover {
+  color: white;
   background-color: var(--greyActive);
 }
 
@@ -53,6 +63,12 @@ nav ul li:nth-child(10) a {
   font-size: 16px;
 }
 
+nav ul li:nth-child(9) a {
+  font-size: 22px;
+  line-height: 42px;
+}
+
 nav ul li:hover a {
   background-color: var(--greyActive);
+  color: var(--blue);
 }
