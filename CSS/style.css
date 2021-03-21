@@ -4,3 +4,37 @@
   --greyActive: #2c2c2c;
   --blue: #64b8fe;
 }
+
+.container {
+  max-with: 1500px;
+  width: 90%;
+  background-color: var(--darkGrey);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+nav {
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  height: auto;
+}
+nav ul li a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  height: 36px;
+  padding: 0px 13px;
+  line-height: 36px;
+  border-right: var(--darkGrey) solid 1px;
+  background-color: var(--grey);
+}
+
+nav ul li:last-of-type a {
+  border-right: 0px;
+}
